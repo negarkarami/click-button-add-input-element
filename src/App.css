@@ -1,0 +1,112 @@
+@import "./assets//flexboxgrid.css";
+
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  /* width: 100vh; */
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-field {
+  flex: 2;
+}
+.output {
+  margin-left: 3rem;
+  flex: 1;
+}
+.form-field label,
+h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(84, 84, 84);
+}
+
+img {
+  height: 8px;
+  width: 8px;
+
+}
+
+input {
+  height: 35px;
+  /* width: 200px; */
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+select {
+  height: 35px;
+  width: 100%;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+input:focus {
+  border: 1px solid rgb(0, 208, 255);
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+.first-division {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px 0.5rem 0;
+  width: 100%;
+}
+span {
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+span {
+  /* align-self: flex-start; */
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  color: rgb(7, 9, 9);
+  border: 1px solid rgb(53, 56, 56);
+}
+
+.remove-btn {
+  cursor: pointer;
+  
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* table */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #7e7676;
+  text-align: left;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
